@@ -1,5 +1,5 @@
 {
-  "name": "iacts-conference-2026",
+  "name": "nims-cvts-bootcamp-2026",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -8,9 +8,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy:gh": "gh-pages -d dist",
+    "deploy:vercel": "vercel --prod"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0"

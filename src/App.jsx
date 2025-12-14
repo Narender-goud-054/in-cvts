@@ -15,10 +15,13 @@ import Footer from './components/Footer/Footer';
 import ScientificProgramme from './components/ScientificProgramme/ScientificProgramme';
 // import PopupDiv from './components/Popup/PopupDiv';
 import RoarAnimation from './components/RoarAnimation';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [popupOpen, setPopupOpen] = useState(true);
   return (
+    <>
+    <Analytics />
     <div className="App">
       <Navigation />
       <Hero />
@@ -45,6 +48,7 @@ function App() {
         <PopupDiv isOpen={popupOpen} closeAction={() => setPopupOpen(false)} />
       )} */}
     </div>
+    </>
   );
 }
 
